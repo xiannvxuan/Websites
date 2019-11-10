@@ -1,112 +1,170 @@
-                $width:100%;
-                $floatl:left;
-                $floatr:right;
-                $t:top;
-                $r:right;
-                $l:left;
-                .head {
-                    width: $width;
-                    height: 87px;
-                    h1 {
-                        float: $floatl;
-                        margin-top: 20px;
-                        width: 136px;
-                        height: 54px;
-                    }
-                    .search {
-                        width: 564px;
-                        height: 42px;
-                        border: solid 2px #00d0d4;
-                        float: $floatl;
-                        margin-#{$t}: 26px;
-                        margin-#{$r}: 38px;
-                        margin-#{$l}: 164px;
-                        border-radius: 7px;
-                        input {
-                            margin-#{$t}: 11px;
-                            margin-#{$l}: 12px;
-                            float: left;
-                            display: inline-block;
-                            width: 484px;
-                            height: 20px;
-                            border: 0;
-                            font-size: 14px;
-                            color: #9e9e9e;
-                        }
-                        .glass {
-                            width: 68px;
-                            height: 42px;
-                            float: $floatr;
-                            background: linear-gradient(116deg, #00d0d4 5%, #00c5c3 51%, #9effa4 100%);
-                            font-size: 20px;
-                            text-align: center;
-                            line-height: 42px;
-                            color: white;
-                            border-radius: 0 5px 5px 0;
-                            -webkit-border-radius: 0 5px 5px 0;
-                            -moz-border-radius: 0 5px 5px 0;
-                            -ms-border-radius: 0 5px 5px 0;
-                            -o-border-radius: 0 5px 5px 0;
-                            cursor: pointer;
-                        }
-                    }
-                    .contact {
-                        float: $floatl;
-                        width: 210px;
-                        height: 44px;
-                        background: hotpink;
-                        margin-#{$t}: 26px;
-                        margin-#{$l}: 25px;
-                        .contact1 {
-                            width: 46px;
-                            height: 44px;
-                            background: #fdf5ec;
-                            text-align: center;
-                            color: #fe9100;
-                            float: left;
-                            margin-right: 8px;
-                            .icon {
-                                display: block;
-                                width: 46px;
-                                height: 22px;
-                                text-align: center;
-                                color: #ff8300;
-                                line-height: 22px;
-                                margin-top: 2px;
-                                background: pink;
-                            }
-                        }
-                        .contact2 {
-                            width: 156px;
-                            height: 44px;
-                            float: right;
-                            line-height: 22px;
-                            .box1 {
-                                width: 156px;
-                                height: 22px;
-                                p {
-                                    float: $floatl;
-                                    color: #757575;
-                                }
-                                span {
-                                    float: $floatr;
-                                    color: #00d2e0;
-                                    font-size: 11px;
-                                }
-                            }
-                            .box2 {
-                                width: 156px;
-                                height: 22px;
-                                p {
-                                    float: $floatl;
-                                    color: #757575;
-                                }
-                                span {
-                                    float: $floatr;
-                                    color: #00d2e0;
-                                    font-size: 11px;
-                                }
-                            }
-                        }
-                    }
-                }
+ $width:100%;
+ $floatl:left;
+ $floatr:right;
+ $t:top;
+ $r:right;
+ $l:left;
+ header {
+     width: 1200px;
+     margin: 0 auto;
+ }
+ 
+ .head {
+     width: $width;
+     height: 87px;
+     h1 {
+         float: $floatl;
+         margin-top: 20px;
+         width: 136px;
+         height: 54px;
+     }
+     .search {
+         width: 564px;
+         height: 42px;
+         border: solid 2px #00d0d4;
+         float: $floatl;
+         margin-#{$t}: 26px;
+         margin-#{$r}: 38px;
+         margin-#{$l}: 164px;
+         border-radius: 7px;
+         input {
+             margin-#{$t}: 11px;
+             margin-#{$l}: 12px;
+             float: left;
+             display: inline-block;
+             width: 484px;
+             height: 20px;
+             border: 0;
+             font-size: 14px;
+             color: #9e9e9e;
+         }
+         .glass {
+             width: 68px;
+             height: 42px;
+             float: $floatr;
+             background: linear-gradient(116deg, #00d0d4 5%, #00c5c3 51%, #9effa4 100%);
+             font-size: 20px;
+             text-align: center;
+             line-height: 42px;
+             color: white;
+             border-radius: 0 5px 5px 0;
+             -webkit-border-radius: 0 5px 5px 0;
+             -moz-border-radius: 0 5px 5px 0;
+             -ms-border-radius: 0 5px 5px 0;
+             -o-border-radius: 0 5px 5px 0;
+             cursor: pointer;
+         }
+     }
+     .contact {
+         float: $floatl;
+         width: 210px;
+         height: 44px;
+         background: hotpink;
+         margin-#{$t}: 26px;
+         margin-#{$l}: 25px;
+         .contact1 {
+             width: 46px;
+             height: 44px;
+             background: #fdf5ec;
+             text-align: center;
+             color: #fe9100;
+             float: left;
+             margin-right: 8px;
+             .icon {
+                 display: block;
+                 width: 46px;
+                 height: 22px;
+                 text-align: center;
+                 color: #ff8300;
+                 line-height: 22px;
+                 margin-top: 2px;
+                 background: pink;
+             }
+         }
+         .contact2 {
+             width: 156px;
+             height: 44px;
+             float: right;
+             line-height: 22px;
+             .box1 {
+                 width: 156px;
+                 height: 22px;
+                 p {
+                     float: $floatl;
+                     color: #757575;
+                 }
+                 span {
+                     float: $floatr;
+                     color: #00d2e0;
+                     font-size: 11px;
+                 }
+             }
+             .box2 {
+                 width: 156px;
+                 height: 22px;
+                 p {
+                     float: $floatl;
+                     color: #757575;
+                 }
+                 span {
+                     float: $floatr;
+                     color: #00d2e0;
+                     font-size: 11px;
+                 }
+             }
+         }
+     }
+ }
+ 
+ .wrapnav {
+     width: $width;
+     height: 44px;
+     background: linear-gradient(90deg, #00d0d4 19%, #00c5c3 58%, #9effa4 100%);
+ }
+ 
+ .nav {
+     width: 1200px;
+     height: 44ulpx;
+     margin: 0 auto;
+     & ul:nth-child(1) {
+         width: 840px;
+         height: 44px;
+         background: #00cdd0;
+         li {
+             float: left;
+             min-width: 60px;
+             height: 44px;
+             text-align: center;
+             line-height: 44px;
+             font-size: 16px;
+             font-weight: 600;
+             &:hover {
+                 background: #00bcd4;
+             }
+             &:hover ul {
+                 display: block;
+             }
+             a {
+                 color: white;
+             }
+             ul {
+                 background: lightblue;
+                 display: none;
+                 position: absolute;
+                 li {
+                     width: auto;
+                     padding-right: 3px;
+                     padding-left: 3px;
+                     float: left;
+                     background: lightblue;
+                     font-weight: bold;
+                     white-space: nowrap;
+                     color: #666666;
+                     a {
+                         display: inline-block;
+                     }
+                 }
+             }
+         }
+     }
+ }
