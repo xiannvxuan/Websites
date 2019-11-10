@@ -148,20 +148,23 @@
                  color: white;
              }
              ul {
-                 background: lightblue;
                  display: none;
                  position: absolute;
+                 border: 2px solid #00bcd4;
                  li {
                      width: auto;
                      padding-right: 3px;
                      padding-left: 3px;
                      float: left;
-                     background: lightblue;
-                     font-weight: bold;
-                     white-space: nowrap;
-                     color: #666666;
+                     background: white;
+                     &:hover {
+                         background: #e0f4ff;
+                     }
                      a {
-                         display: inline-block;
+                         font-size: 13px;
+                         font-weight: bold;
+                         white-space: nowrap;
+                         color: #666666;
                      }
                  }
              }
