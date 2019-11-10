@@ -3,13 +3,37 @@ $height:29px;
 header .top {
     width: $width;
     height: $height;
+    background: pink;
+    overflow: hidden;
     ul {
-        width: 406px;
         height: $height;
         float: right;
+        margin-top: 8px;
         li {
+            height: 12px;
             float: left;
+            color: #a1a1a1;
+            text-align: center;
+            line-height: 12px;
+            padding-left: 11px;
+            padding-right: 11px;
             border-right: solid 1px #dddddd;
+            cursor: pointer;
+            &:hover {
+                color: #00A3D2;
+            }
+            .icon {
+                font-size: 12px;
+            }
+            &:last-child {
+                border: none;
+            }
+            &:first-child {
+                color: black;
+            }
+            a {
+                color: #00bcd4;
+            }
         }
     }
 }
