@@ -13,7 +13,7 @@ gulp.task("server", function() {
 gulp.task("sass", function() {
     gulp.src("sass/*.scss")
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({ outputStyle: "expanded" }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest("dist/css"));
 });
