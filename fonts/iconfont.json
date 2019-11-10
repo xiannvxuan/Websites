@@ -1,0 +1,107 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1338467",
+      "name": "日历Calendar",
+      "font_class": "rili",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2678637",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "3826027",
+      "name": "记录",
+      "font_class": "jilu",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "3865619",
+      "name": "海滩度假",
+      "font_class": "haitandujia",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "5439965",
+      "name": "发票问题",
+      "font_class": "fapiaowenti",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "6682260",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "7254949",
+      "name": "圈圈向右箭头",
+      "font_class": "quanquanxiangyoujiantou",
+      "unicode": "e737",
+      "unicode_decimal": 59191
+    },
+    {
+      "icon_id": "7466500",
+      "name": "书本、标签、记录",
+      "font_class": "huabanfuben",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "7789620",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "9908896",
+      "name": "旅游景点",
+      "font_class": "lvyoujingdian",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "9908901",
+      "name": "旅游攻略",
+      "font_class": "lvyougonglve",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "10152099",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "10408797",
+      "name": "打印机",
+      "font_class": "dayinji",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "11529681",
+      "name": "记录",
+      "font_class": "jilu1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}
