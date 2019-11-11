@@ -124,7 +124,7 @@ header {
 
 .nav {
     width: 1200px;
-    height: 44ulpx;
+    height: 44px;
     margin: 0 auto;
     .box {
         min-width: 840px;
@@ -132,7 +132,6 @@ header {
         background: #00cdd0;
         .first {
             float: left;
-            min-width: 60px;
             width: 60px;
             height: 44px;
             text-align: center;
@@ -228,11 +227,10 @@ header {
             color: #666666 !important;
         }
         li {
-            width: auto;
             height: 43px;
             padding: 0 12px;
             float: left;
-            cursor: pointer;
+            // cursor: pointer;
             &:hover {
                 background: #e0f4ff;
             }
