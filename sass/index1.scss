@@ -156,6 +156,7 @@ header {
         }
     }
     .sec1-1 {
+        width: 215px;
         height: 43px;
         display: none;
         position: absolute;
@@ -172,6 +173,7 @@ header {
             padding: 0 12px;
             float: left;
             cursor: pointer;
+            background: white;
             &:hover {
                 background: #e0f4ff;
             }
@@ -186,6 +188,7 @@ header {
         }
     }
     .sec2-1 {
+        width: 649px;
         height: 43px;
         display: none;
         position: absolute;
@@ -202,6 +205,7 @@ header {
             padding: 0 12px;
             float: left;
             cursor: pointer;
+            background: white;
             &:hover {
                 background: #e0f4ff;
             }
@@ -216,6 +220,7 @@ header {
         }
     }
     .sec3-1 {
+        width: 419px;
         height: 43px;
         display: none;
         position: absolute;
@@ -230,7 +235,8 @@ header {
             height: 43px;
             padding: 0 12px;
             float: left;
-            // cursor: pointer;
+            cursor: pointer;
+            background: white;
             &:hover {
                 background: #e0f4ff;
             }
@@ -245,6 +251,7 @@ header {
         }
     }
     .sec4-1 {
+        width: 417px;
         height: 43px;
         display: none;
         position: absolute;
@@ -261,6 +268,7 @@ header {
             padding: 0 12px;
             float: left;
             cursor: pointer;
+            background: white;
             &:hover {
                 background: #e0f4ff;
             }
@@ -275,6 +283,7 @@ header {
         }
     }
     .sec5-1 {
+        width: 446px;
         height: 43px;
         display: none;
         position: absolute;
@@ -291,6 +300,7 @@ header {
             padding: 0 12px;
             float: left;
             cursor: pointer;
+            background: white;
             &:hover {
                 background: #e0f4ff;
             }
@@ -305,6 +315,7 @@ header {
         }
     }
     .sec6-1 {
+        width: 317px;
         height: 43px;
         display: none;
         position: absolute;
@@ -321,9 +332,88 @@ header {
             padding: 0 12px;
             float: left;
             cursor: pointer;
+            background: white;
             &:hover {
                 background: #e0f4ff;
             }
+        }
+    }
+}
+
+main {
+    background: pink;
+    width: 1200px;
+    margin: 0 auto;
+    .role {
+        width: 1200px;
+        height: 320px;
+        background: yellowgreen;
+        margin-top: 16px;
+        .box-l {
+            width: 710px;
+            height: 308px;
+            background: pink;
+            border: solid 6px #00d0d4;
+            float: left;
+            .box-l-l {
+                width: 72px;
+                height: 308px;
+                background: #00d0d4;
+                float: left;
+                li {
+                    height: 38.5px;
+                    font-size: 15px;
+                    text-align: center;
+                    line-height: 38.5px;
+                    color: white;
+                    font-weight: 500;
+                    cursor: pointer;
+                    &:hover {
+                        background: white;
+                        color: #00d0d4
+                    }
+                }
+            }
+            .box-l-r {
+                width: 638px;
+                height: 308px;
+                background: white;
+                float: right;
+                .br1 {
+                    height: 40px;
+                    background: pink;
+                    .ul-l {
+                        width: 240px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        margin-left: 16px;
+                        float: left;
+                        li {
+                            float: left;
+                            padding: 0 21px;
+                        }
+                    }
+                    .ul-r {
+                        width: 183px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        float: left;
+                        margin-left: 180px;
+                        li {
+                            float: left;
+                            padding: 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .box-r {
+            width: 464px;
+            height: 320px;
+            background: red;
+            float: right;
         }
     }
 }
