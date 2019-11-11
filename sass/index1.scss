@@ -376,7 +376,7 @@ main {
                 height: 308px;
                 background: white;
                 float: right;
-                .br1 {
+                .br {
                     height: 40px;
                     color: #999999;
                     font-size: 13px;
@@ -623,6 +623,45 @@ main {
                     width: 605px;
                     margin-top: 15px;
                 }
+            }
+            .br1 {
+                @extend .br;
+                //display: none;
+            }
+            .br2 {
+                background: pink;
+                @extend .br;
+                display: none;
+            }
+            .br3 {
+                background: red;
+                @extend .br;
+                display: none;
+            }
+            .br4 {
+                background: rebeccapurple;
+                @extend .br;
+                display: none;
+            }
+            .br5 {
+                background: green;
+                @extend .br;
+                display: none;
+            }
+            .br6 {
+                background: blue;
+                @extend .br;
+                display: none;
+            }
+            .br7 {
+                background: hotpink;
+                @extend .br;
+                display: none;
+            }
+            .br8 {
+                background: yellowgreen;
+                @extend .br;
+                display: none;
             }
         }
         .box-r {
