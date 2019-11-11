@@ -35,6 +35,10 @@ header {
             width: 484px;
             height: 20px;
             border: 0;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            font-family: tahoma, arial, "Hiragino Sans GB", simsun, sans-serif;
             font-size: 14px;
             color: #9e9e9e;
         }
@@ -59,7 +63,6 @@ header {
         float: $floatl;
         width: 210px;
         height: 44px;
-        background: hotpink;
         margin-#{$t}: 26px;
         margin-#{$l}: 25px;
         .contact1 {
@@ -67,7 +70,6 @@ header {
             height: 44px;
             background: #fdf5ec;
             text-align: center;
-            color: #fe9100;
             float: left;
             margin-right: 8px;
             .icon {
@@ -75,10 +77,8 @@ header {
                 width: 46px;
                 height: 22px;
                 text-align: center;
-                color: #ff8300;
                 line-height: 22px;
                 margin-top: 2px;
-                background: pink;
             }
         }
         .contact2 {
@@ -341,18 +341,15 @@ header {
 }
 
 main {
-    background: pink;
     width: 1200px;
     margin: 0 auto;
     .role {
         width: 1200px;
         height: 320px;
-        background: yellowgreen;
         margin-top: 16px;
         .box-l {
             width: 710px;
             height: 308px;
-            background: pink;
             border: solid 6px #00d0d4;
             float: left;
             .box-l-l {
@@ -381,29 +378,185 @@ main {
                 float: right;
                 .br1 {
                     height: 40px;
-                    background: pink;
-                    .ul-l {
-                        width: 240px;
+                    color: #999999;
+                    font-size: 13px;
+                    .br1-top {
+                        width: 602px;
                         height: 40px;
-                        text-align: center;
-                        line-height: 40px;
                         margin-left: 16px;
-                        float: left;
-                        li {
+                        border-bottom: solid 1px #97d3d9;
+                        .ul-l {
+                            width: 240px;
+                            height: 38px;
+                            text-align: center;
+                            line-height: 40px;
                             float: left;
-                            padding: 0 21px;
+                            letter-spacing: normal;
+                            word-spacing: normal;
+                            text-transform: none;
+                            font-family: tahoma, arial, "Hiragino Sans GB", simsun, sans-serif;
+                            word-spacing: 1px;
+                            li {
+                                float: left;
+                                padding: 0 21px;
+                                cursor: pointer;
+                                &:hover {
+                                    color: #3f3f3f;
+                                    border-bottom: solid 1px #00d2e0;
+                                }
+                            }
+                        }
+                        .ul-r {
+                            width: 183px;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            letter-spacing: normal;
+                            word-spacing: normal;
+                            text-transform: none;
+                            font-family: tahoma, arial, "Hiragino Sans GB", simsun, sans-serif;
+                            float: left;
+                            margin-left: 175px;
+                            li {
+                                float: left;
+                                padding: 0 4px;
+                                cursor: pointer;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
                         }
                     }
-                    .ul-r {
-                        width: 183px;
-                        height: 40px;
-                        text-align: center;
-                        line-height: 40px;
-                        float: left;
-                        margin-left: 180px;
-                        li {
+                    .br1-f {
+                        width: 542px;
+                        height: 125px;
+                        margin-left: 30px;
+                        margin-top: 24px;
+                        ul {
+                            width: 136px;
+                            height: 18px;
+                            li {
+                                width: 66px;
+                                height: 18px;
+                                float: left;
+                            }
+                        }
+                        .journey {
+                            width: 254px;
+                            height: 88px;
                             float: left;
-                            padding: 0 8px;
+                            margin-top: 12px;
+                            position: relative;
+                            line-height: 36px;
+                            span {
+                                float: left;
+                            }
+                            .start {
+                                width: 240px;
+                                height: 36px;
+                                margin-top: 12px;
+                                border: solid 1px #cccccc;
+                                float: left;
+                                input {
+                                    display: inline-block;
+                                    width: 160px;
+                                    height: 30px;
+                                    border: none;
+                                    margin-left: 8px;
+                                }
+                            }
+                            .arrive {
+                                width: 240px;
+                                height: 36px;
+                                margin-top: 12px;
+                                border: solid 1px #cccccc;
+                                float: left;
+                                input {
+                                    display: inline-block;
+                                    width: 160px;
+                                    height: 30px;
+                                    border: none;
+                                    margin-left: 8px;
+                                }
+                            }
+                            .icon {
+                                float: right;
+                                width: 25px;
+                                height: 24px;
+                                margin-top: 7px;
+                                margin-right: 3px;
+                                cursor: pointer;
+                            }
+                        }
+                        .box-c {
+                            width: 16px;
+                            height: 55px;
+                            border: solid 1px #cccccc;
+                            border-left: none;
+                            position: relative;
+                            position: absolute;
+                            right: -4px;
+                            bottom: 1px;
+                            span {
+                                display: block;
+                                width: 16px;
+                                height: 16px;
+                                background: #999999;
+                                color: white;
+                                text-align: center;
+                                line-height: 15px;
+                                position: absolute;
+                                bottom: 22px;
+                                right: -8px;
+                                cursor: pointer;
+                                &:hover {
+                                    background: #268fc5;
+                                }
+                            }
+                        }
+                        .calendar {
+                            width: 238px;
+                            height: 88px;
+                            float: left;
+                            line-height: 36px;
+                            margin-left: 40px;
+                            margin-top: 12px;
+                            .rili1 {
+                                width: 240px;
+                                height: 36px;
+                                float: left;
+                                margin-top: 12px;
+                                border: solid 1px #cccccc;
+                                input {
+                                    display: inline-block;
+                                    width: 160px;
+                                    height: 30px;
+                                    border: none;
+                                    margin-left: 8px;
+                                }
+                            }
+                            .rili2 {
+                                width: 240px;
+                                height: 36px;
+                                float: left;
+                                margin-top: 12px;
+                                border: solid 1px #cccccc;
+                                input {
+                                    display: inline-block;
+                                    width: 160px;
+                                    height: 30px;
+                                    border: none;
+                                    margin-left: 8px;
+                                }
+                            }
+                            .icon {
+                                float: right;
+                                width: 25px;
+                                height: 24px;
+                                margin-top: 7px;
+                                margin-right: 3px;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -412,7 +565,6 @@ main {
         .box-r {
             width: 464px;
             height: 320px;
-            background: red;
             float: right;
         }
     }
