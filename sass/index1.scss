@@ -429,7 +429,7 @@ main {
                     }
                     .br1-f {
                         width: 542px;
-                        height: 125px;
+                        height: 130px;
                         margin-left: 30px;
                         margin-top: 24px;
                         ul {
@@ -452,6 +452,18 @@ main {
                                 float: left;
                             }
                             .start {
+                                 ::-webkit-input-placeholder {
+                                    color: #cccccc;
+                                }
+                                 :-moz-placeholder {
+                                    color: #cccccc;
+                                }
+                                 ::-moz-placeholder {
+                                    color: #cccccc;
+                                }
+                                 :-ms-input-placeholder {
+                                    color: #cccccc;
+                                }
                                 width: 240px;
                                 height: 36px;
                                 margin-top: 12px;
@@ -466,6 +478,18 @@ main {
                                 }
                             }
                             .arrive {
+                                 ::-webkit-input-placeholder {
+                                    color: #cccccc;
+                                }
+                                 :-moz-placeholder {
+                                    color: #cccccc;
+                                }
+                                 ::-moz-placeholder {
+                                    color: #cccccc;
+                                }
+                                 :-ms-input-placeholder {
+                                    color: #cccccc;
+                                }
                                 width: 240px;
                                 height: 36px;
                                 margin-top: 12px;
@@ -559,6 +583,45 @@ main {
                             }
                         }
                     }
+                }
+                .other {
+                    width: 540px;
+                    height: 40px;
+                    margin-left: 30px;
+                    margin-top: 16px;
+                    text-align: center;
+                    line-height: 40px;
+                    p {
+                        float: left;
+                        color: #666666;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        text-transform: none;
+                        font-family: tahoma, arial, "Hiragino Sans GB", simsun, sans-serif;
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                    input {
+                        float: right;
+                        width: 133px;
+                        height: 41px;
+                        background: linear-gradient(-136deg, #fac928 0, #ff9800 100%);
+                        cursor: pointer;
+                        border: 0;
+                        border-radius: 5px;
+                        color: white;
+                        font-size: 16px;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        text-transform: none;
+                        font-family: tahoma, arial, "Hiragino Sans GB", simsun, sans-serif;
+                    }
+                }
+                img {
+                    display: block;
+                    width: 605px;
+                    margin-top: 15px;
                 }
             }
         }
