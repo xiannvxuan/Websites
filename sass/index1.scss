@@ -30,7 +30,6 @@ header {
         input {
             margin-#{$t}: 11px;
             margin-#{$l}: 12px;
-            float: left;
             display: inline-block;
             width: 484px;
             height: 20px;
@@ -850,6 +849,33 @@ main {
                     height: 100%;
                 }
             }
+        }
+    }
+    .box2 {
+        width: 1200px;
+        height: 288px;
+        background: green;
+        .slideBox {
+            width: 945px;
+            height: 288px;
+            float: left;
+            background: hotpink;
+            overflow: hidden;
+            .imgList {
+                height: 288px;
+                li {
+                    float: left;
+                }
+            }
+            img {
+                border: 0;
+            }
+        }
+        .text {
+            width: 228px;
+            height: 288px;
+            background: greenyellow;
+            float: right;
         }
     }
 }
