@@ -1253,6 +1253,9 @@ footer {
                 margin-right: 22px;
                 a {
                     color: #999999;
+                    &:hover {
+                        color: #FFAA74;
+                    }
                 }
             }
             .a1-1 {
@@ -1278,5 +1281,79 @@ footer {
         }
         border-bottom: solid 1px #d8d8d8;
     }
-    .part3 {}
+    .part3 {
+        width: 616px;
+        margin: 62px auto 18px;
+        li {
+            padding-left: 6px;
+            padding-right: 6px;
+            font-size: 12px;
+            line-height: 12px;
+            border-left: 1px solid #999999;
+            color: #999999;
+            float: left;
+            cursor: pointer;
+            &:hover {
+                color: #FFAA74;
+            }
+        }
+        .part3-1 {
+            border: none;
+            position: relative;
+            &:hover {
+                .dis {
+                    display: block;
+                }
+            }
+            div {
+                float: left;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+    }
+    .dis {
+        background: white;
+        display: none;
+        width: 114px;
+        height: 100px;
+        border: solid 1px #d8d8d8;
+        position: absolute;
+        left: -5px;
+        bottom: -4px;
+        li {
+            width: 102px;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px !important;
+            color: #999999;
+            border-left: 0;
+            &:hover {
+                background: rgb(226, 226, 226);
+                color: #999999 !important;
+            }
+        }
+        div {
+            float: left;
+            margin-top: 3px;
+            font-size: 12px;
+            color: #FFAA74 !important;
+        }
+    }
+    p {
+        width: 970px !important;
+        margin: 16px auto;
+        color: #999999;
+    }
+    span {
+        width: 470px;
+        display: block;
+        margin: 16px auto;
+        color: #999999;
+    }
+    .part4 {
+        width: 405px;
+        display: block;
+        margin: 16px auto;
+    }
 }
