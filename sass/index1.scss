@@ -1357,3 +1357,144 @@ footer {
         margin: 16px auto;
     }
 }
+
+.tofix {
+    width: 75px;
+    height: 74px;
+    position: fixed !important;
+    top: 20px;
+    position: relative;
+    .out {
+        background: url(../img/icons.png) no-repeat;
+        background-color: transparent;
+        background-position: -46px -32px;
+        width: 57px;
+        height: 49px;
+        position: absolute;
+        z-index: 1;
+        top: 41px;
+        left: -57px;
+        cursor: pointer;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .outt {
+        position: fixed;
+        width: 35px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 5000;
+        min-height: 480px;
+        background: #7C8994;
+        .bot1 {
+            width: 35px;
+            height: 135px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            span {
+                display: block;
+                width: 30px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                margin: 0 auto;
+                &:hover {
+                    background: white;
+                    color: powderblue;
+                }
+            }
+        }
+        .se {
+            background: url(../img/icons.png) no-repeat;
+            background-position: -53px -84px;
+            display: block;
+            width: 24px;
+            height: 2px;
+            margin: 20px auto;
+        }
+        .bot2 {
+            @extend .bot1;
+            span {
+                display: block;
+                width: 30px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                margin: 0 auto;
+                &:hover {
+                    background: white;
+                    color: powderblue;
+                }
+            }
+        }
+        .se1 {
+            @extend .se;
+            margin-top: 10px;
+        }
+        .bot3 {
+            @extend .bot1;
+            span {
+                display: block;
+                width: 30px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                margin: 0 auto;
+                &:hover {
+                    background: white;
+                    color: powderblue;
+                }
+            }
+            .back {
+                display: none;
+            }
+        }
+    }
+    .fixed1 {
+        position: fixed;
+        width: 300px;
+        height: 38px;
+        border: solid 1px #616161;
+        left: 34px;
+        top: 94px;
+        background: url(../img/123.png) no-repeat;
+        background-size: cover;
+        display: none;
+    }
+    .loginmin {
+        position: fixed;
+        width: 300px;
+        height: 300px;
+        border: solid 1px #616161;
+        background: white;
+        left: 34px;
+        background-size: cover;
+        display: none;
+    }
+    .loginmin1 {
+        @extend .loginmin;
+        top: 176px;
+    }
+    .loginmin2 {
+        @extend .loginmin;
+        top: 224px;
+    }
+    .loginmin3 {
+        @extend .loginmin;
+        top: 272px;
+    }
+    .fixed2 {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        border: solid 1px #616161;
+        background: url(../img/ewm.png) no-repeat;
+        background-size: cover;
+        left: 36px;
+        top: 340px;
+        display: none;
+    }
+}
