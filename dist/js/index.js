@@ -43,42 +43,46 @@
              "display": "none"
          })
          $(".loginminn").css({
-             "display": "block"
+             "display": "block",
+             "top": "95px"
          })
      });
 
      $("#fixed2").click(function() {
 
-         $(".loginmin1").css({
-             "display": "block"
+         $(".loginminn").css({
+             "display": "block",
+             "top": "176px"
          })
      });
      $("#fixed2").mouseout(function() {
-         $(".loginmin1").css({
+         $(".loginminn").css({
              "display": "none"
          })
      });
 
      $("#fixed3").click(function() {
 
-         $(".loginmin2").css({
-             "display": "block"
+         $(".loginminn").css({
+             "display": "block",
+             "top": "224px"
          })
      });
      $("#fixed3").mouseout(function() {
-         $(".loginmin2").css({
+         $(".loginminn").css({
              "display": "none"
          })
      });
 
      $("#fixed4").click(function() {
 
-         $(".loginmin3").css({
-             "display": "block"
+         $(".loginminn").css({
+             "display": "block",
+             "top": "272px"
          })
      });
      $("#fixed4").mouseout(function() {
-         $(".loginmin3").css({
+         $(".loginminn").css({
              "display": "none"
          })
      });
@@ -104,36 +108,6 @@
              "display": "none"
          })
      });
-     $(".loginmin1").mouseover(function() {
-         $(".loginmin1").css({
-             "display": "block"
-         })
-     });
-     $(".loginmin1").mouseout(function() {
-         $(".loginmin1").css({
-             "display": "none"
-         })
-     });
-     $(".loginmin2").mouseover(function() {
-         $(".loginmin2").css({
-             "display": "block"
-         })
-     });
-     $(".loginmin2").mouseout(function() {
-         $(".loginmin2").css({
-             "display": "none"
-         })
-     });
-     $(".loginmin3").mouseover(function() {
-         $(".loginmin3").css({
-             "display": "block"
-         })
-     });
-     $(".loginmin3").mouseout(function() {
-         $(".loginmin3").css({
-             "display": "none"
-         })
-     });
 
      // 回到顶部
      $(window).scroll(function() {
@@ -151,4 +125,51 @@
          $(".back").hide()
      })
 
+ })
+
+ function check_login() {
+     var name = $("#user_name").val();
+     var pass = $("#password").val();
+     if (name == "admin" && pass == "admin") {
+         alert("登录成功！");
+         $("#user_name").val("");
+         $("#password").val("");
+
+     } else {
+         $("#login_form").removeClass('shake_effect');
+         setTimeout(function() {
+             $("#login_form").addClass('shake_effect')
+         }, 1);
+     }
+ }
+
+ function check_register() {
+     var name = $("#r_user_name").val();
+     var pass = $("#r_password").val();
+     if (name != "" && pass == "" && email != "") {
+         alert("注册成功！");
+         $("#user_name").val("");
+         $("#password").val("");
+     } else {
+         $("#login_form").removeClass('shake_effect');
+         setTimeout(function() {
+             $("#login_form").addClass('shake_effect')
+         }, 1);
+     }
+ }
+ $(function() {
+     $("#create").click(function() {
+         check_register();
+         return false;
+     })
+     $("#login").click(function() {
+         check_login();
+         return false;
+     })
+     $('.message a').click(function() {
+         $('.haha').animate({
+             height: 'toggle',
+             opacity: 'toggle'
+         }, 'slow');
+     });
  })

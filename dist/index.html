@@ -1237,11 +1237,30 @@
             </ul>
 
             <div class="fixed1"></div>
-            <div class="loginminn"></div>
-            <div class="loginmin1"></div>
-            <div class="loginmin2"></div>
-            <div class="loginmin3"></div>
+
+
             <div class="fixed2"></div>
+
+            <div id="login_form" class="loginminn">
+                <form class="register-form haha">
+                    <input type="text" placeholder="用户名" value="admin" id="r_user_name" />
+                    <input type="password" placeholder="密码" id="r_password" />
+                    <button id="create">创建账户</button>
+                    <p class="message">已经有了一个账户?
+                        <a href="#">立刻登录</a>
+                    </p>
+                </form>
+                <form class="login-form haha">
+                    <input type="text" placeholder="用户名" value="admin" id="user_name" />
+                    <input type="password" placeholder="密码" id="password" />
+                    <button id="login">登　录</button>
+                    <p class="message">还没有账户?
+                        <a href="#">立刻创建</a>
+                    </p>
+                </form>
+            </div>
+
+
         </div>
         <script>
             console.log(document.getElementById("box-lr"))
