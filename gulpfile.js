@@ -30,6 +30,8 @@ gulp.task("babel", function() {
         .pipe(gulp.dest("dist/js"))
 })
 
+
+
 gulp.task("watch", function() {
     gulp.watch("sass/*.scss", ["sass"]);
     gulp.watch(["img/**", "fonts/**", "html/**", "js/**", "index.html"], ["copy"]);

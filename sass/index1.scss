@@ -854,21 +854,78 @@ main {
     .box2 {
         width: 1200px;
         height: 288px;
-        .slideBox {
+        #slideBox {
             width: 945px;
             height: 288px;
             float: left;
             overflow: hidden;
             cursor: pointer;
             .imgList {
-                height: 288px;
-                position: relative;
+                width: 100%;
+                height: 100%;
+                 :first-child {
+                    opacity: 1;
+                    filter: opacity(opacity=100);
+                    -webkit-filter: opacity(opacity=100);
+                }
+                img {
+                    display: block;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                }
                 li {
+                    width: 100%;
+                    height: 100%;
                     position: absolute;
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    -webkit-filter: alpha(opacity=0);
                 }
             }
-            img {
-                border: 0;
+            .btns span {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background: #000;
+                color: white;
+                opacity: .3;
+                filter: alpha(opacity=30);
+                font-size: 50px;
+                text-align: center;
+                line-height: 50px;
+                top: 50%;
+                margin-top: -25px;
+                cursor: pointer;
+            }
+            .btns span:first-child {
+                left: 10px;
+            }
+            .btns span:last-child {
+                right: 10px;
+            }
+            .numList {
+                position: absolute;
+                bottom: 10px;
+                right: 50px;
+            }
+            .numList li {
+                float: left;
+                margin: 10px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+                background: white;
+                color: red;
+            }
+            .numList li.hover,
+            .numList li:hover {
+                background: red;
+                color: white;
             }
         }
         .text {
@@ -1359,7 +1416,6 @@ footer {
 }
 
 .tofix {
-    display: none;
     width: 75px;
     height: 74px;
     position: fixed !important;
@@ -1382,7 +1438,7 @@ footer {
     .outt {
         position: fixed;
         width: 35px;
-        left: 0;
+        left: -52px;
         top: 0;
         bottom: 0;
         z-index: 5000;
@@ -1459,8 +1515,8 @@ footer {
         width: 300px;
         height: 38px;
         border: solid 1px #616161;
-        left: 34px;
-        top: 94px;
+        left: 32px;
+        top: 96px;
         background: url(../img/123.png) no-repeat;
         background-size: cover;
         display: none;
@@ -1471,9 +1527,14 @@ footer {
         height: 300px;
         border: solid 1px #616161;
         background: white;
-        left: 34px;
+        left: 32px;
         background-size: cover;
         display: none;
+    }
+    .loginminn {
+        @extend .loginmin;
+        background: pink;
+        top: 95px;
     }
     .loginmin1 {
         @extend .loginmin;

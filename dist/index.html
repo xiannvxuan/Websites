@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js"></script>
     <script src="fonts/iconfont.js"></script>
-    <if ie></if>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <div class="top">
             <ul>
                 <li>请&nbsp;<a href="html/login.html">登录</a>&nbsp; 或&nbsp;
-                    <a href="html/register.html">免费注册</a>
+                    <a href="html/login.html">免费注册</a>
                 </li>
                 <li>
                     <svg class="icon" aria-hidden="true">
@@ -143,17 +144,17 @@
             <div class="box-l">
                 <div class="box-l-l">
                     <ul>
-                        <li class="bl1">机票</li>
-                        <li class="bl2">酒店</li>
-                        <li class="bl3">火车票</li>
-                        <li class="bl4">度假</li>
-                        <li class="bl5">门票</li>
-                        <li class="bl6">团购</li>
-                        <li class="bl7">车车</li>
-                        <li class="bl8">自由行</li>
+                        <li class="bl1 tbb">机票</li>
+                        <li class="bl2 tbb">酒店</li>
+                        <li class="bl3 tbb">火车票</li>
+                        <li class="bl4 tbb">度假</li>
+                        <li class="bl5 tbb">门票</li>
+                        <li class="bl6 tbb">团购</li>
+                        <li class="bl7 tbb">车车</li>
+                        <li class="bl8 tbb">自由行</li>
                     </ul>
                 </div>
-                <div class="box-l-r">
+                <div class="box-l-r" id="box-lr">
                     <div class="br1">
                         <div class="br1-top">
                             <ul class="ul-l">
@@ -754,7 +755,8 @@
             </div>
         </div>
         <div class="box2">
-            <div class="slideBox ">
+
+            <div id="slideBox">
                 <ul class="imgList">
                     <li>
                         <a href="#"><img src="img/lunbo1.jpg"></a>
@@ -765,26 +767,19 @@
                     <li>
                         <a href="#"><img src="img/lunbo3.jpg"></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="img/lunbo4.jpg"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/lunbo5.jpg"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/lunbo1.jpg"></a>
-                    </li>
-                </ul>
 
-
-                <ul class="numList">
-                    <li class="hover"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                 </ul>
             </div>
+            <script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+            <script src="js/startMove.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+                let a = new Slider("slideBox", 945, 288);
+                a.autoplay();
+                a.addNums();
+            </script>
+
+
+
 
             <div class="text">
                 <h5>旅行资讯</h5>
@@ -1226,29 +1221,43 @@
         <div class="out"></div>
         <div class="outt">
             <ul class="bot1">
-                <li><span>X</span></li>
-                <li><span>用户</span></li>
+                <li id="guanbi"><span>X</span></li>
+                <li id="fixed1"><span>用户</span></li>
             </ul>
             <div class="se"></div>
             <ul class="bot2">
-                <li><span>登</span></li>
-                <li><span>录</span></li>
-                <li><span>吧</span></li>
+                <li id="fixed2"><span>登</span></li>
+                <li id="fixed3"><span>录</span></li>
+                <li id="fixed4"><span>吧</span></li>
             </ul>
             <div class="se1"></div>
             <ul class="bot3">
-                <li><span>扫码</span></li>
+                <li id="ewm"><span>扫码</span></li>
                 <li class="back"><span>回顶</span></li>
             </ul>
 
             <div class="fixed1"></div>
+            <div class="loginminn"></div>
             <div class="loginmin1"></div>
             <div class="loginmin2"></div>
             <div class="loginmin3"></div>
             <div class="fixed2"></div>
         </div>
+        <script>
+            console.log(document.getElementById("box-lr"))
+            let tb = document.getElementsByClassName("tbb");
+            let br = document.getElementById("box-lr").children;
 
+            for (let i = 0; i < 8; i++) {
+                tb[i].onclick = function() {
+                    for (let j = 0; j < 8; j++) {
+                        br[j].style.display = "none";
+                    }
+                    br[i].style.display = "block"
+                }
 
+            }
+        </script>
     </div>
 
 </body>
